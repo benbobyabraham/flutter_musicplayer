@@ -65,6 +65,39 @@ class _MusicAppState extends State<MusicApp> {
                     fontWeight: FontWeight.w100,
                   ),
                 ),
+                SizedBox(
+                  height: 12.0,
+                ),
+                Center(
+                  child: Container(
+                    width: 250.0,
+                    height: 300.0,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(30.0),
+                      image: DecorationImage(
+                        image: AssetImage("assets/cover.jpg"),
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 12.0,
+                ),
+                Center(
+                  child: Text(
+                    "Stargazer",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+                Expanded(
+                    child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                  ),
+                )),
               ],
             ),
           ),
