@@ -43,26 +43,38 @@ class _MusicAppState extends State<MusicApp> {
               ]),
         ),
         child: Padding(
-          padding: EdgeInsets.symmetric(vertical: 48.0, horizontal: 12.0),
+          padding: EdgeInsets.only(
+            top: 48.0,
+          ),
           child: Container(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  "Walkman",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 32.0,
-                    fontWeight: FontWeight.bold,
+                Padding(
+                  padding: const EdgeInsets.only(
+                    left: 12.0,
+                  ),
+                  child: Text(
+                    "Walkman",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 28.0,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
-                Text(
-                  "Listen to your faviorite Music",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 22.0,
-                    fontWeight: FontWeight.w100,
+                Padding(
+                  padding: const EdgeInsets.only(
+                    left: 12.0,
+                  ),
+                  child: Text(
+                    "Listen to your favorite Music",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 22.0,
+                      fontWeight: FontWeight.w100,
+                    ),
                   ),
                 ),
                 SizedBox(
@@ -85,19 +97,40 @@ class _MusicAppState extends State<MusicApp> {
                 ),
                 Center(
                   child: Text(
-                    "Stargazer",
+                    "Middle of the Night",
                     style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.w600,
                     ),
                   ),
                 ),
+                SizedBox(
+                  height: 12.0,
+                ),
                 Expanded(
                     child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                  ),
-                )),
+                        decoration: BoxDecoration(
+                            color: Color.fromARGB(255, 179, 255, 247),
+                            borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(30.0),
+                              topRight: Radius.circular(30.0),
+                            )),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Row(
+                              children: [
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: Icon(
+                                    Icons.skip_previous,
+                                  ),
+                                ),
+                              ],
+                            )
+                          ],
+                        ))),
               ],
             ),
           ),
